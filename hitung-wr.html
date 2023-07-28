@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="7STREET">
+    <meta name="keywords" content="sevenstreetsq, stolidpen, sevensq ,7street, kalklator, kalkulatorrankml">
+    <meta name="author" content="StolidPen Febriosein">
+    <title>7STREET SQUAD</title>
+    <link rel="icon" href="img/seven.png">
+    <link rel="stylesheet" href="css/hitung-wr.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/seven-logotext.png" alt="Seven" class="logo">
+            <input type="checkbox" id="burger">
+            <label for="burger" class="burger">
+                <input type="checkbox" id="burger" class="burgerc">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Follow Us</a></li>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="hitung-wr.html">Hitung WR</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper pt-4">
+        <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-9 col-sm-9">
+                    <div class="text-center mb-3">
+                        <img src="img/seven.png" class="mlImg" alt="sevenlogo" width="200" height="200">
+                    </div>
+                    <form class="mb-3">
+                        <div class="mb-3"><label class="mb-1" for="idMatch">JUMLAH PERTANDINGAN</label>
+                            <input type="number" placeholder="Contoh: 388" autofocus="" autocomplete="off" id="tMatch"
+                                class="form-control">
+                        </div>
+                        <div class="mb-3"><label class="mb-1" for="tWr">WIN RATE SAAT INI</label>
+                            <input type="number" placeholder="Contoh: 55%" step="any" autocomplete="off" id="tWr"
+                                class="form-control">
+                        </div>
+                        <div class="mb-3"><label class="mb-1" for="wrReq">WIN RATE YANG DI INGINKAN</label>
+                            <input type="number" placeholder="Contoh: 70%" step="any" autocomplete="off" id="wrReq"
+                                class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-primary d-block w-100" type="button" id="hasil">Hitung
+                                    Pertandingan</button>
+                            </div>
+                        </div>
+                    </form>
+                    <span id="resultText" class="text-center d-block"> </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            // Variables
+            const tMatch = document.querySelector("#tMatch");
+            const tWr = document.querySelector("#tWr");
+            const wrReq = document.querySelector("#wrReq");
+            const hasil = document.querySelector("#hasil");
+            const resultText = document.querySelector("#resultText");
+
+            // Functions
+            function res() {
+                const resultNum = rumus(tMatch.value, tWr.value, wrReq.value);
+                const text =
+                    `Kamu memerlukan sekitar <b>${resultNum}</b> win tanpa lose untuk mendapatkan win rate <b>${wrReq.value}%</b>`;
+                resultText.innerHTML = text;
+            }
+
+            function rumus(tMatch, tWr, wrReq) {
+                let tWin = tMatch * (tWr / 100);
+                let tLose = tMatch - tWin;
+                let sisaWr = 100 - wrReq;
+                let wrResult = 100 / sisaWr;
+                let seratusPersen = tLose * wrResult;
+                let final = seratusPersen - tMatch;
+                return Math.round(final);
+            }
+
+            // Main
+            window.addEventListener("load", init);
+
+            function init() {
+                load();
+                eventListener();
+            }
+
+            function load() { }
+
+            function eventListener() {
+                hasil.addEventListener("click", res);
+            }
+        </script>
+    </div>
+
+    <footer class="footer">
+        <div class="containerfooter">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>7STREET SQUAD</h4>
+                    <p>7STREET SQUAD adalah sebuah tim atau squad yang didirikan pada tahun 2021. Tim ini terdiri
+                        dari tujuh orang pendiri yang berfokus pada game Mobile Legends dengan tujuan untuk menjadi
+                        pemain profesional</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Link</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Follow Us</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="hitung-wr.html">Hitung WR</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">SG 2 Alok Only</a></li>
+                        <li><a href="#">Utiwi Gelory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Members</h4>
+                    <ul>
+                        <li><a href="https://tiktok.com/@vynzz_011" target="_blank" rel="noopener noreferrer">7S Vinzzy ygy..!</a></li>
+                        <li><a href="https://tiktok.com/@stolidpen" target="_blank" rel="noopener noreferrer">7S StolidPen</a></li>
+                        <li><a href="https://tiktok.com/@xienzmlbb" target="_blank" rel="noopener noreferrer">7S XienzzV</a></li>
+                        <li><a href="#">7S •SANS•FEB•</a></li>
+                        <li><a href="https://tiktok.com/@zhensukatango_" target="_blank" rel="noopener noreferrer">7S Sir` Zhen.</a></li>
+                        <li><a href="https://tiktok.com/@talohbusuk" target="_blank" rel="noopener noreferrer">7S DAPA ツ</a></li>
+                        <li><a href="https://tiktok.com/@callmebel31" target="_blank" rel="noopener noreferrer">7S IM Rabel</a></li>
+                        <li><a href="#">7S Player Pro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/groups/732637295075742/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://tiktok.com/@stolidpen" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div id="copyright">
+                    &copy;1945STREETSQUAD
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
