@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
-:root
-{
+:root {
     --white: #FFFFFF;
     --whitea: #DDE6ED;
-    --bluea: #9DB2BF;
-    --blueb: #526D82;
-    --bluec: #42526b;
-    --blued: #27374D;
+    --bluea: #00eeff;
+    --blueb: #323946;
+    --bluec: #1f242d;
     --black: #000000;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -19,11 +17,12 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--whitea);
-    color: var(--black);
+body {
+    background-color: var(--bluec);
+    color: var(--white);
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -34,7 +33,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--blueb);
+    background-color: var(--bluec);
     padding: 20px 150px 18px 150px;
     color: var(--white);
     font-family: 'Space Grotesk', sans-serif;
@@ -53,8 +52,8 @@ body{
 }
 
 .menu a:hover {
-    border-bottom: 2px solid var(--white);
-    color: var(--yellow);
+    border-bottom: 2px solid var(--bluea);
+    color: var(--bluea);
 }
 
 
@@ -74,30 +73,35 @@ body{
 
 /*-------------------Home---------------------*/
 
-.container-home{
+.container-home {
     padding-top: 180px;
     padding-bottom: 200px;
     margin-right: 80px;
     margin-left: 80px;
 }
 
-.flex-co{
+.flex-co {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.h1{
+.h1 {
     font-size: 25px;
 }
 
-.h1 span{
+.h1 span {
     font-size: 45px;
-    color: var(--bluec);
+    color: var(--bluea);
 }
 
-.h2{
+.h2 {
     font-size: 18px;
+}
+
+.h2 span {
+    font-size: 18px;
+    color: var(--bluea);
 }
 
 .pbutton {
@@ -109,63 +113,52 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px;
+    padding: 8px 30px;
     gap: 15px;
-    background-color: var(--blueb);
+    background-color: var(--bluea);
+    color: var(--bluec);
+    border: 2px solid var(--white);
     border-radius: 10px;
     cursor: pointer;
     transition: 400ms;
 }
 
-.button .text {
-    color: white;
-    font-weight: 700;
-    font-size: 1em;
-    transition: 400ms;
-    font-family: 'Space Grotesk', sans-serif;
+.pbutton :hover {
+    background-color: var(--whitea);
+    border: 2px solid var(--bluea);
+    color: var(--bluec);
 }
-
-.pbutton p{
-    cursor: pointer;
-}
-
-.button :hover{
-    background-color: var(--bluec);
-}
-
-.pbutton :hover{
-    background-color: var(--bluec);
-}
-    
 
 
 /*-------------------Home---------------------*/
 
 /*-------------------Tentang---------------------*/
 
-.container-tentang{
+.container-tentang {
     margin-top: 80px;
-    margin-bottom: 900px;
-    margin-right: 80px;
-    margin-left: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
+    background-color: #323946;
 }
 
-.flex-co-tentang h2{
+
+.flex-co-tentang h2 {
     padding: 30px 0px;
     font-size: 50px;
 }
 
-.tentang-saya{
+.tentang-saya {
     margin-bottom: 50px;
 }
 
-.tentang-saya h3{
+.tentang-saya h3 {
     text-align: center;
     font-size: 35px;
+    color: var(--bluea);
 }
 
 
-.tentang-saya p{
+.tentang-saya p {
     font-size: 25px;
 }
 
@@ -174,13 +167,59 @@ body{
 
 /*-------------------Skill---------------------*/
 
-.skill h3{
+.skill h3 {
     text-align: center;
     font-size: 35px;
+    color: var(--bluea);
 }
 
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-bottom: 80px;
+}
+
+.card-co {
+    background: var(--bluec);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--bluea);
+    transition: 0.5s ease;
+}
+
+.fa-brands {
+    color: var(--bluea);
+    font-size: 100px;
+    transition: 400ms;
+}
+
+.icon-hover :hover {
+    color: var(--bluea);
+    font-size: 110px;
+}
 
 /*-------------------Skill---------------------*/
+
+/*-------------------Project---------------------*/
+
+.container-project {
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-bottom: 900px;
+    background-color: var(--bluec);
+}
+
+.flex-co-project h2 {
+    padding: 30px 0px;
+    font-size: 50px;
+}
+
+/*-------------------Project---------------------*/
 
 /*-------------------Resoponsif Navbar---------------------*/
 
