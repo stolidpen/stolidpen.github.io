@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+
+:root
+{
+    --white: #FFFFFF;
+    --whitea: #DDE6ED;
+    --bluea: #9DB2BF;
+    --blueb: #526D82;
+    --bluec: #42526b;
+    --blued: #27374D;
+    --black: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--whitea);
+    color: var(--black);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/*-------------------Navbar---------------------*/
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blueb);
+    padding: 20px 150px 18px 150px;
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid var(--white);
+    color: var(--yellow);
+}
+
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#burger,
+.navbar label {
+    display: none;
+}
+
+/*-------------------Navbar---------------------*/
+
+
+/*-------------------Home---------------------*/
+
+.container-home{
+    padding-top: 180px;
+    padding-bottom: 200px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.flex-co{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1{
+    font-size: 25px;
+}
+
+.h1 span{
+    font-size: 45px;
+    color: var(--bluec);
+}
+
+.h2{
+    font-size: 18px;
+}
+
+.pbutton {
+    display: flex;
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 15px;
+    background-color: var(--blueb);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.pbutton p{
+    cursor: pointer;
+}
+
+.button :hover{
+    background-color: var(--bluec);
+}
+
+.pbutton :hover{
+    background-color: var(--bluec);
+}
+    
+
+
+/*-------------------Home---------------------*/
+
+/*-------------------Tentang---------------------*/
+
+.container-tentang{
+    margin-top: 80px;
+    margin-bottom: 900px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.flex-co-tentang h2{
+    padding: 30px 0px;
+    font-size: 50px;
+}
+
+.tentang-saya{
+    margin-bottom: 50px;
+}
+
+.tentang-saya h3{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.tentang-saya p{
+    font-size: 25px;
+}
+
+
+/*-------------------Tentang---------------------*/
+
+/*-------------------Skill---------------------*/
+
+.skill h3{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/*-------------------Skill---------------------*/
+
+/*-------------------Resoponsif Navbar---------------------*/
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        padding: 30px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 30px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .list {
+        gap: 90px;
+    }
+
+    .logo {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .burger {
+        position: relative;
+        width: 30px;
+        height: 20px;
+        background: transparent;
+        cursor: pointer;
+        display: block;
+    }
+
+    .burger input {
+        display: none;
+    }
+
+    .burger span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    .burger span:nth-of-type(1) {
+        top: 0px;
+        transform-origin: left center;
+    }
+
+    .burger span:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        transform-origin: left center;
+    }
+
+    .burger span:nth-of-type(3) {
+        top: 100%;
+        transform-origin: left center;
+        transform: translateY(-100%);
+    }
+
+
+    #burger:checked~.menu {
+        max-height: 100%;
+    }
+
+}
