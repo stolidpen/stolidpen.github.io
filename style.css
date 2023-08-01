@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
+
+/* Font
+    font-family: 'Figtree', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+*/
+
+
+:root {
+    --white: #FFFFFF;
+    --whitea: #DDE6ED;
+    --bluea: #00eeff;
+    --blueb: #323946;
+    --bluec: #1f242d;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bluec);
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/*-------------------Navbar---------------------*/
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bluec);
+    padding: 20px 150px 18px 150px;
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+.navbar a b {
+    font-size: 25px;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid var(--bluea);
+    color: var(--bluea);
+}
+
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.thankyou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.info-pesan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.thankyou {
+    font-size: 50px;
+}
+
+
+#burger,
+.navbar label {
+    display: none;
+}
+
+/*-------------------Navbar---------------------*/
+
+
+/*-------------------Home---------------------*/
+
+.container-home {
+    padding-top: 180px;
+    padding-bottom: 200px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.flex-co {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1 {
+    font-size: 25px;
+}
+
+.h1 span {
+    font-size: 45px;
+    color: var(--bluea);
+}
+
+.h2 {
+    font-size: 18px;
+}
+
+.h2 span {
+    font-size: 18px;
+    color: var(--bluea);
+}
+
+.pbutton {
+    display: flex;
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px;
+    gap: 15px;
+    background-color: var(--bluea);
+    color: var(--bluec);
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.pbutton :hover {
+    background-color: var(--whitea);
+    border: 2px solid var(--bluea);
+    color: var(--bluec);
+}
+
+
+/*-------------------Home---------------------*/
+
+/*-------------------Tentang---------------------*/
+
+.container-tentang {
+    margin-top: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
+    background-color: #323946;
+}
+
+
+.flex-co-tentang h2 {
+    padding: 30px 0px;
+    font-size: 50px;
+}
+
+.tentang-saya {
+    margin-bottom: 50px;
+}
+
+.tentang-saya h3 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--bluea);
+}
+
+
+.tentang-saya p {
+    font-size: 25px;
+}
+
+
+/*-------------------Tentang---------------------*/
+
+/*-------------------Skill---------------------*/
+
+.skill h3 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--bluea);
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding-bottom: 80px;
+}
+
+.card-co {
+    background: var(--bluec);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.card-co h4 {
+    font-size: 20px;
+}
+
+.grid-card .card-co {
+    flex: 1 1 30rem;
+    background: var(--bluec);
+    text-align: center;
+    border: 0.2rem solid var(--white);
+}
+
+.grid-card .card-co:hover {
+    border-color: var(--bluea);
+    transform: scale(1.02);
+}
+
+.fa-brands {
+    color: var(--bluea);
+    font-size: 100px;
+    transition: 400ms;
+}
+
+.icon-hover :hover {
+    color: var(--white);
+    font-size: 110px;
+}
+
+.card-co {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/*-------------------Skill---------------------*/
+
+/*-------------------Project---------------------*/
+
+.container-project {
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-bottom: 900px;
+    background-color: var(--bluec);
+}
+
+.flex-co-project h2 {
+    padding: 30px 0px;
+    font-size: 50px;
+}
+
+/*-------------------Project---------------------*/
+
+
+/*-------------------kontak---------------------*/
+
+.container-kontak {
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 100px;
+    background-color: var(--blueb);
+}
+
+.flex-co-kontak h2 {
+    padding: 30px 0px;
+    font-size: 50px;
+}
+
+.kontak-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+form input,
+form textarea,
+form button {
+    border: 0;
+    margin: 5px;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.bbutton button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: var(--bluea);
+    border: 2px solid var(--white);
+    cursor: pointer;
+    transition: 400ms;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.bbutton button:hover {
+    background-color: var(--whitea);
+    border: 2px solid var(--bluea);
+    color: var(--bluec);
+}
+
+/*-------------------kontak---------------------*/
+
+/*-------------------Resoponsif Navbar---------------------*/
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        padding: 30px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 30px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .list {
+        gap: 90px;
+    }
+
+    .logo {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .burger {
+        position: relative;
+        width: 30px;
+        height: 20px;
+        background: transparent;
+        cursor: pointer;
+        display: block;
+    }
+
+    .burger input {
+        display: none;
+    }
+
+    .burger span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    .burger span:nth-of-type(1) {
+        top: 0px;
+        transform-origin: left center;
+    }
+
+    .burger span:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        transform-origin: left center;
+    }
+
+    .burger span:nth-of-type(3) {
+        top: 100%;
+        transform-origin: left center;
+        transform: translateY(-100%);
+    }
+
+
+    #burger:checked~.menu {
+        max-height: 100%;
+    }
+
+}
+
+/*-------------------Resoponsif Navbar---------------------*/
+
+/*-------------------Resoponsif Terima Kasih---------------------*/
+
+@media screen and (max-width: 1000px) {
+    .thankyou {
+        font-size: 30px;
+        margin: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .thankyou {
+        font-size: 20px;
+        margin: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 100px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .info-pesan {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .thankyou {
+        font-size: 16px;
+    }
+
+    .info-pesan {
+        font-size: 8px;
+    }
+}
+
+/*-------------------Resoponsif Terima Kasih---------------------*/
+
+/*-------------------Resoponsif Home---------------------*/
+
+@media screen and (max-width: 1000px) {
+    .flex-co{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perkenalan{
+        margin-bottom: 100px;
+    }
+
+    .foto-diri img{
+        width: 250px;
+    }
+}
+
+
+
+/*-------------------Resoponsif Home---------------------*/
+
+
+/*-------------------Resoponsif Tentang---------------------*/
+
+@media screen and (max-width: 1000px) {
+    .tentang-saya p{
+        font-size: 16px;
+        -webkit-line-clamp: 8;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+    
+    .grid-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
