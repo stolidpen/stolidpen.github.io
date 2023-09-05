@@ -297,7 +297,7 @@ iconify-icon {
     font-weight: 500;
     align-items: center;
     gap: 0.25rem;
-    background-color: #2563EB;
+    background-color: var(--darkblue);
     padding: 4px 8px;
     border-radius: 4px;
 }
@@ -310,6 +310,17 @@ iconify-icon {
     transform: translateX(4px);
 }
 
+.copyright{
+    text-align: center;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 5px;
+}
+
+.copyright h3{
+    font-size: 12px;
+    font-weight: 500;
+}
 
 @media screen and (max-width: 450px) {
     .co-head {
@@ -331,6 +342,82 @@ iconify-icon {
 
     .introduce h3 {
         font-size: 10px;
+    }
+
+    .co-about {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-bottom: 5px;
+    }
+
+    .co-content-about {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .heading-title {
+        font-size: 38px;
+    }
+
+    .about-intro h2 {
+        font-size: 16px;
+    }
+
+    .my-photo img {
+        width: 100%;
+        position: relative;
+        bottom: 35px;
+        right: 15px;
+    }
+
+    .co-skill {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .co-skill-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    iconify-icon {
+        font-size: 40px;
+    }
+
+    .title-card-skill h1 {
+        font-size: 33px;
+    }
+
+    .content-card-skill p {
+        font-size: 16px;
+    }
+
+    .icon-tools {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .icon-tools img {
+        width: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 11px;
+    }
+
+    .co-project {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    
+    .co-project-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-row-gap: 30px;
     }
 }
 
