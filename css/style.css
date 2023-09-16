@@ -194,7 +194,7 @@ body {
     color: var(--white);
 }
 
-iconify-icon {
+.title-card-skill iconify-icon {
     font-size: 50px;
     color: var(--blue);
 }
@@ -337,7 +337,7 @@ iconify-icon {
     margin-left: 90px;
     margin-right: 90px;
     padding-top: 60px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 .text-contact h1 {
@@ -349,6 +349,47 @@ iconify-icon {
     font-size: 80px;
     margin-top: 50px;
     color: var(--white);
+}
+
+.info-contact{
+    display: flex;
+    margin-top: 120px;
+    color: #FFFFFF;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-contact img{
+    border-radius: 50%;
+    width: 165px;
+}
+
+.info-t-contact h1{
+    margin-bottom: 12px;
+}
+
+.t-line{
+    height: 2px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.t-contact{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.t-contact h2 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.t-contact iconify-icon{
+    font-size: 24px;
 }
 
 @media screen and (max-width: 450px) {
