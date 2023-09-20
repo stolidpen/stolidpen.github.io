@@ -17,6 +17,29 @@
     flex-direction: column;
 }
 
+.action-p-button {
+    display: flex;
+    margin-top: 12px;
+}
+
+.action-button {
+    padding: 5px 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 2px solid #0f1f29;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 400ms;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.action-p-button :hover {
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+
 @media screen and (max-width: 770px) {
     .co-project-content {
         display: grid;
