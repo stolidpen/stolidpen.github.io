@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
     --white: #FFFFFF;
     --blue: #1CAFDD;
     --darkblue: #375878;
+    --blur: blur(12px);
 }
 
 * {
@@ -24,60 +25,57 @@ body {
 }
 
 .co-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     position: fixed;
-    background-color: var(--blue);
+    z-index: 50;
+    left: 0;
+    right: 0;
+    top: 0;
+    backdrop-filter: var(--blur);
 }
 
 .nav-co {
-    position: fixed;
-    width: 650px;
-    top: 50%;
-    left: 50%;
-    margin-top: -325px;
-    margin-left: -325px;
+
 }
 
 .ul-co {
     display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-    background: rgba(28, 175, 221, 0.5);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(28, 175, 221, 0.25);
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
 }
 
 .ul-co a {
     font-family: 'Figtree', sans-serif;
     font-weight: 700;
+    font-size: 18px;
     color: white;
 }
 
 .bg-gradient {
-    background: radial-gradient(90.87% 36.33% at -2.85% -2.27%, rgba(103, 232, 249, .3) 0%, rgba(6, 182, 212, 0) 100%), linear-gradient(180deg, #c7fcff 0%, rgba(236, 254, 255, 0) 100%);
+    background: rgb(7,31,43);
+    background: linear-gradient(0deg, rgba(7,31,43,1) 0%, rgba(28,175,221,1) 100%);
 }
 
 .co-home {
     margin-left: 50px;
     margin-right: 50px;
-    padding-top: 28px;
+    padding-top: 60px;
     padding-bottom: 240px;
 }
 
 .co-profile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
 }
 
 .profile h3 {
-    color: #375878;
+    color: white;
     font-family: 'Figtree', sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -90,21 +88,22 @@ body {
 
 .introduce h1 {
     font-size: 60px;
-    color: #375878;
+    color: white;
 }
 
 .introduce h2 {
     font-size: 75px;
-    color: #1CAFDD;
+    color: #00caff;
+    
 }
 
 .introduce h3 {
     font-size: 20px;
-    color: #375878;
+    color: white;
 }
 
-.introduce h4 {
-    display: none;
+.about-me{
+    background-color: #071f2b;
 }
 
 .co-about {
@@ -123,13 +122,15 @@ body {
 
 .heading-title {
     font-size: 45px;
-    color: #375878;
+    color: white;
     padding-top: 20px;
     padding-bottom: 15px;
 }
 
 .about-intro h2 {
-    font-weight: 500;
+    font-weight: 400;
+    text-align: justify;
+    color: white;
 }
 
 .my-photo img {
@@ -148,7 +149,7 @@ body {
     align-items: center;
     padding: 8px 30px;
     gap: 15px;
-    background-color: var(--darkblue);
+    background-color: var(--blue);
     color: var(--white);
     border: 2px solid var(--white);
     border-radius: 10px;
@@ -159,8 +160,8 @@ body {
 
 .pbutton :hover {
     background-color: var(--white);
-    border: 2px solid var(--darkblue);
-    color: var(--darkblue);
+    border: 2px solid var(--blue);
+    color: var(--blue);
 }
 
 .skill {
@@ -252,14 +253,13 @@ body {
     margin-right: 90px;
     margin-left: 90px;
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 180px;
 }
 
 
 .co-project-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 30px;
 }
@@ -421,16 +421,16 @@ body {
     }
 
     .introduce h3 {
-        font-size: 11px;
-    }
-
-    .introduce h4{
         display:inline-table;
         font-size: 12px;
         font-weight: 700;
         color: #375878;
         margin-left: 18px;
         margin-right: 18px;
+    }
+    
+    br{
+        display: none;
     }
 
     .co-about {
